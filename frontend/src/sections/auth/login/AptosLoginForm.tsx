@@ -19,6 +19,7 @@ const AptosLoginForm: FC = () =>
     {
         setOpen(false);
     };
+    console.log(availableWallets);
     return <>
         <Stack direction={'column'} gap={2}>
             {
@@ -27,7 +28,7 @@ const AptosLoginForm: FC = () =>
                         <AptosConnectWalletRow
                             key={wallet.name}
                             wallet={wallet}
-                            onConnect={close}
+                            onConnect={() => {}}
                         />
                     ))}
                 </>
